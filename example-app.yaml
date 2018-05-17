@@ -6,7 +6,8 @@ metadata:
     tier: frontend
   annotations:
     prometheus.io/scrape: 'true'
-spec: 
+spec:
+  type: LoadBalancer 
   selector: 
     app: example-app 
   ports:
