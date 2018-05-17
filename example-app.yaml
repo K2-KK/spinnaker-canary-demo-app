@@ -11,7 +11,7 @@ spec:
   ports:
   - name: http
     protocol: TCP
-    port: 30000
+    port: 35000
     targetPort: 8080
 ---
 apiVersion: extensions/v1beta1
