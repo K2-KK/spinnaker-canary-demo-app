@@ -14,7 +14,7 @@ spec:
   - name: http
     protocol: TCP
     port: 30000
-    targetPort: 8080
+    targetPort: 8081
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
