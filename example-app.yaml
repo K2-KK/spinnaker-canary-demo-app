@@ -7,14 +7,14 @@ metadata:
   annotations:
     prometheus.io/scrape: 'true'
 spec:
-  type: LoadBalancer 
+  type: NodePort 
   selector: 
     app: example-app 
   ports:
   - name: web
     protocol: TCP
-    port: 8080
-    targetPort: web
+    port: 30000
+    targetPort: 8080
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
