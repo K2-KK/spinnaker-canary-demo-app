@@ -4,8 +4,6 @@ metadata:
   name: example-app
   labels:
     tier: frontend
-  annotations:
-    prometheus.io/scrape: 'true'
 spec:
   type: NodePort 
   selector: 
@@ -16,7 +14,6 @@ spec:
     port: 30000
     targetPort: 8080
 ---
-
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
